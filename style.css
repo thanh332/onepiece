@@ -1,0 +1,1029 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=IM+Fell+English:ital@0;1&family=Special+Elite&display=swap');
+
+:root {
+    --gold: #d9b96e;
+    --gold-light: #f0d99e;
+    --ink: #302619;
+    --paper: #e8d5a8;
+    --ocean: #102f3b;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #10252b;
+    color: #f1e5c9;
+    font-family: 'IM Fell English', serif;
+}
+
+button, input {
+    font: inherit;
+}
+
+.topbar {
+    min-height: 75px;
+    padding: 12px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: #101e20;
+    border-bottom: 2px solid var(--gold);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--gold-light);
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.brand-icon {
+    font-size: 32px;
+}
+
+.brand small {
+    display: block;
+    font-family: 'Special Elite', cursive;
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: #b9a77f;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #e7d9b8;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: var(--gold);
+    text-shadow: 0 0 12px #d9b96e;
+}
+
+.header-stamp {
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 8px 12px;
+    font-family: 'Special Elite', cursive;
+    font-size: 11px;
+    transform: rotate(4deg);
+}
+
+/* HERO */
+
+.hero {
+    min-height: 620px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    background:
+        radial-gradient(ellipse at 50% 40%, #28505a 0%, #173944 45%, #0c222b 100%);
+    border-bottom: 3px solid var(--gold);
+}
+
+.hero::before,
+.hero::after {
+    content: "✦";
+    position: absolute;
+    color: #c5a75e;
+    font-size: 180px;
+    opacity: .08;
+}
+
+.hero::before {
+    left: 7%;
+    top: 15%;
+}
+
+.hero::after {
+    right: 7%;
+    bottom: 5%;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 750px;
+    padding: 60px 20px;
+}
+
+.eyebrow {
+    font-family: 'Special Elite', cursive;
+    letter-spacing: 4px;
+    font-size: 12px;
+    color: var(--gold);
+}
+
+.hero h1 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(45px, 8vw, 92px);
+    line-height: 1.05;
+    letter-spacing: 4px;
+    margin: 25px 0;
+    color: #f1e2c1;
+    text-shadow: 0 6px 25px #0008;
+}
+
+.hero h1 span {
+    color: var(--gold);
+}
+
+.hero-divider {
+    color: var(--gold);
+    margin: 20px;
+}
+
+.hero-description {
+    font-size: 21px;
+    line-height: 1.7;
+    color: #e0d3b8;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: var(--gold);
+    color: #1c2927;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+
+.hero-button:hover {
+    background: #fff0c5;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px #0006;
+}
+
+.hero-compass {
+    position: absolute;
+    right: 8%;
+    top: 18%;
+    border: 2px solid #c8a75c66;
+    border-radius: 50%;
+    width: 105px;
+    height: 105px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    font-family: 'Cinzel', serif;
+}
+
+.hero-compass span {
+    font-size: 38px;
+    line-height: 1;
+}
+
+.hero-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px;
+    display: flex;
+    justify-content: space-around;
+    background: #08191dcc;
+    color: #c9b57f;
+    font-family: 'Special Elite', cursive;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+/* ALLGEMEINE ABSCHNITTE */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-heading h2 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(30px, 5vw, 48px);
+    color: #f0dfbb;
+    margin: 12px 0;
+}
+
+.section-heading > p:last-child {
+    color: #cbbfa5;
+    font-size: 18px;
+}
+
+.map-section,
+.island-list {
+    padding: 90px 5%;
+    max-width: 1600px;
+    margin: auto;
+}
+
+.map-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+    font-family: 'Special Elite', cursive;
+    font-size: 12px;
+    color: #d6c49b;
+}
+
+.map-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.map-legend span {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.legend-dot {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.legend-dot.grand {
+    background: #d4a64f;
+}
+
+.legend-dot.blue {
+    background: #5a9ca9;
+}
+
+.legend-dot.red {
+    background: #a74e3e;
+}
+
+.map-counter strong {
+    color: var(--gold);
+    font-size: 16px;
+}
+
+/* WELTKARTE */
+
+.map-frame {
+    background: #091b21;
+    padding: 12px;
+    border: 2px solid #9b7b40;
+    box-shadow: 0 15px 45px #0007;
+}
+
+.map-paper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1.6 / 1;
+    min-height: 480px;
+    overflow: hidden;
+    color: var(--ink);
+    background:
+        radial-gradient(ellipse at 50% 50%, #f0dfb9 0%, #e3cd9b 65%, #b99c66 100%);
+    border: 7px double #82653d;
+}
+
+.map-paper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse at 20% 30%, transparent 0 45%, #8e6c3a22 75%),
+        repeating-linear-gradient(35deg, transparent 0 35px, #7e623014 36px 37px);
+    pointer-events: none;
+}
+
+.map-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(#806a4420 1px, transparent 1px),
+        linear-gradient(90deg, #806a4420 1px, transparent 1px);
+    background-size: 6% 8%;
+}
+
+.map-title {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Cinzel', serif;
+    font-size: clamp(12px, 2vw, 25px);
+    font-weight: 800;
+    letter-spacing: 4px;
+    white-space: nowrap;
+    color: #5c4527;
+}
+
+.map-subtitle {
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Special Elite', cursive;
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: #81683f;
+}
+
+.compass-map {
+    position: absolute;
+    right: 3%;
+    top: 4%;
+    width: 65px;
+    height: 90px;
+    border: 1px solid #836c43;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #614b2e;
+    font-family: 'Cinzel', serif;
+    z-index: 5;
+}
+
+.compass-map div {
+    font-size: 40px;
+    line-height: 1;
+}
+
+.sea-label {
+    position: absolute;
+    font-family: 'Cinzel', serif;
+    font-size: clamp(10px, 1.4vw, 16px);
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #517b7a;
+    opacity: .8;
+    transform: rotate(-12deg);
+}
+
+.sea-label.east { left: 5%; top: 42%; }
+.sea-label.west { right: 5%; top: 30%; }
+.sea-label.north { left: 43%; top: 14%; }
+.sea-label.south { left: 42%; bottom: 5%; }
+
+.red-line {
+    position: absolute;
+    z-index: 1;
+    background: #a84c3c;
+    opacity: .72;
+    box-shadow: 0 0 0 5px #a84c3c22;
+}
+
+.red-line.vertical {
+    width: 13px;
+    height: 100%;
+    left: 33%;
+    top: 0;
+    background: repeating-linear-gradient(
+        0deg, #a84c3c 0 30px, #c37b56 31px 38px
+    );
+}
+
+.red-line.horizontal {
+    height: 13px;
+    width: 100%;
+    left: 0;
+    top: 54%;
+    background: repeating-linear-gradient(
+        90deg, #a84c3c 0 30px, #c37b56 31px 38px
+    );
+}
+
+.calm-belt {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3%;
+    border-top: 2px dashed #597c74;
+    border-bottom: 2px dashed #597c74;
+    opacity: .6;
+}
+
+.calm-belt.top { top: 18%; }
+.calm-belt.bottom { bottom: 17%; }
+
+.grand-line {
+    position: absolute;
+    z-index: 1;
+    top: 47%;
+    left: 34%;
+    width: 65%;
+    height: 15%;
+    border: 3px dashed #b98a3e;
+    border-radius: 50%;
+    background: #d9ad5c22;
+    transform: rotate(-2deg);
+}
+
+.grand-line-label,
+.new-world-label {
+    position: absolute;
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    color: #765222;
+    background: #ead8ad;
+    padding: 3px 8px;
+}
+
+.grand-line-label {
+    top: -12px;
+    left: 15%;
+}
+
+.new-world-label {
+    bottom: -12px;
+    right: 8%;
+}
+
+.map-islands {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+}
+
+.island-pin {
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    transform: translate(-50%, -50%);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #73552b;
+    background: #f0dfb9;
+    color: #382b1c;
+    cursor: pointer;
+    font-size: 17px;
+    box-shadow: 0 3px 8px #49391f55;
+    transition: .25s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.island-pin span {
+    position: absolute;
+    left: 50%;
+    top: 120%;
+    transform: translateX(-50%);
+    font-family: 'Special Elite', cursive;
+    font-size: 9px;
+    white-space: nowrap;
+    background: #e8d6ae;
+    border: 1px solid #947443;
+    padding: 3px 5px;
+    color: #4c3821;
+    opacity: 0;
+    pointer-events: none;
+    transition: .2s;
+}
+
+.island-pin:hover {
+    transform: translate(-50%, -50%) scale(1.3);
+    background: #fff2c9;
+    z-index: 50;
+    box-shadow: 0 0 18px #fff2c9;
+}
+
+.island-pin:hover span {
+    opacity: 1;
+}
+
+.island-pin.grand-pin {
+    border-color: #a77b31;
+    background: #f5d68b;
+}
+
+.island-pin.new-pin {
+    border-color: #9a5440;
+    background: #e8b58a;
+}
+
+.map-footer-left,
+.map-footer-right {
+    position: absolute;
+    bottom: 2%;
+    font-family: 'Special Elite', cursive;
+    font-size: 8px;
+    color: #755c37;
+    letter-spacing: 2px;
+    z-index: 3;
+}
+
+.map-footer-left { left: 2%; }
+.map-footer-right { right: 2%; }
+
+.map-hint {
+    text-align: center;
+    color: #c9b78e;
+    margin-top: 18px;
+    font-style: italic;
+}
+
+/* INSELREGISTER */
+
+.search-box {
+    max-width: 500px;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 18px;
+    background: #f0dfbd;
+    border: 2px solid #b99b60;
+    color: #3b3021;
+}
+
+.search-box span {
+    font-size: 25px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #302619;
+    width: 100%;
+    font-family: 'IM Fell English', serif;
+    font-size: 17px;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+.filter {
+    padding: 9px 15px;
+    border: 1px solid #b89b61;
+    background: transparent;
+    color: #e4d4b2;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    transition: .2s;
+}
+
+.filter:hover,
+.filter.active {
+    background: var(--gold);
+    color: #1d2926;
+}
+
+.island-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.island-card {
+    position: relative;
+    padding: 23px;
+    background: #1a3438;
+    border: 1px solid #8e7548;
+    transition: .3s;
+    cursor: pointer;
+    min-height: 190px;
+    overflow: hidden;
+}
+
+.island-card::after {
+    content: "✦";
+    position: absolute;
+    right: 12px;
+    bottom: -30px;
+    font-size: 100px;
+    color: #d8b66b;
+    opacity: .06;
+}
+
+.island-card:hover {
+    transform: translateY(-6px);
+    background: #23464a;
+    box-shadow: 0 12px 25px #0004;
+    border-color: var(--gold);
+}
+
+.card-region {
+    color: var(--gold);
+    font-family: 'Special Elite', cursive;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.island-card h3 {
+    color: #f0dfbb;
+    font-family: 'Cinzel', serif;
+    font-size: 19px;
+    margin: 13px 0 8px;
+}
+
+.island-card p {
+    color: #cbbfa5;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.card-open {
+    display: block;
+    margin-top: 15px;
+    color: var(--gold);
+    font-family: 'Special Elite', cursive;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+/* ZITAT */
+
+.quote-section {
+    padding: 85px 20px;
+    text-align: center;
+    background:
+        linear-gradient(#0b2028dd, #0b2028ee),
+        repeating-linear-gradient(45deg, #173e45, #173e45 10px, #12343d 10px, #12343d 20px);
+    border-top: 1px solid #9c804e;
+    border-bottom: 1px solid #9c804e;
+}
+
+.quote-mark {
+    font-family: 'Cinzel', serif;
+    color: var(--gold);
+    font-size: 90px;
+    height: 55px;
+}
+
+.quote-section p {
+    font-family: 'Cinzel', serif;
+    color: #e9d7ae;
+    font-size: clamp(20px, 4vw, 32px);
+    line-height: 1.6;
+    letter-spacing: 3px;
+}
+
+.quote-section span {
+    display: block;
+    margin-top: 20px;
+    color: var(--gold);
+    font-family: 'Special Elite', cursive;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+/* MODAL */
+
+.island-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: #07171bea;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.island-modal.show {
+    display: flex;
+    animation: modalFade .3s ease;
+}
+
+.island-modal-card {
+    width: 100%;
+    max-width: 680px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    padding: 35px;
+    background:
+        radial-gradient(circle at top, #f4e5bf, #dfc99a);
+    color: #34291d;
+    border: 7px double #82653d;
+    box-shadow: 0 20px 70px #0009;
+    text-align: center;
+    animation: cardAppear .4s ease;
+}
+
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    color: #5a4026;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.modal-file-label {
+    font-family: 'Special Elite', cursive;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #8c6939;
+}
+
+.modal-island-icon {
+    font-size: 65px;
+    margin-top: 15px;
+}
+
+.modal-region {
+    font-family: 'Special Elite', cursive;
+    font-size: 11px;
+    color: #94713e;
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+
+.island-modal-card h2 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(27px, 5vw, 42px);
+    margin: 8px 0;
+    color: #46351f;
+}
+
+.modal-divider {
+    color: #a17b3e;
+    margin: 12px;
+}
+
+.modal-description {
+    font-size: 19px;
+    line-height: 1.7;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    text-align: left;
+    margin: 25px 0;
+}
+
+.info-grid div {
+    padding: 13px;
+    background: #cbb58b55;
+    border: 1px solid #a68b5a;
+}
+
+.info-grid span {
+    display: block;
+    font-family: 'Special Elite', cursive;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #806037;
+    margin-bottom: 7px;
+}
+
+.info-grid strong {
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+}
+
+.modal-funfact {
+    padding: 17px;
+    background: #3a4a3c;
+    color: #f1dfb7;
+    text-align: left;
+}
+
+.modal-funfact span {
+    color: #e6c77e;
+    font-family: 'Special Elite', cursive;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.modal-funfact p {
+    margin-top: 9px;
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+.modal-done {
+    margin-top: 22px;
+    padding: 12px 25px;
+    background: #70552e;
+    color: #fff0cf;
+    border: none;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+    transition: .2s;
+}
+
+.modal-done:hover {
+    background: #3b4d3c;
+}
+
+/* GEHEIMNIS-TOAST */
+
+.treasure-toast {
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%, 100px);
+    background: #e4c77e;
+    color: #302619;
+    padding: 14px 25px;
+    z-index: 3000;
+    font-family: 'Cinzel', serif;
+    box-shadow: 0 5px 25px #0006;
+    transition: .4s;
+    white-space: nowrap;
+}
+
+.treasure-toast.show {
+    transform: translate(-50%, 0);
+}
+
+/* FOOTER */
+
+footer {
+    padding: 35px 20px;
+    text-align: center;
+    background: #09191e;
+    border-top: 2px solid var(--gold);
+    color: #e5d3aa;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+}
+
+footer p {
+    margin: 12px;
+    color: #b9aa8b;
+    font-family: 'IM Fell English', serif;
+    letter-spacing: 0;
+}
+
+footer span {
+    font-family: 'Special Elite', cursive;
+    color: var(--gold);
+    font-size: 10px;
+}
+
+@keyframes modalFade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes cardAppear {
+    from { opacity: 0; transform: scale(.9) translateY(20px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+    .topbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 17px;
+    }
+
+    .island-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .map-paper {
+        min-height: 470px;
+        aspect-ratio: auto;
+    }
+
+    .island-pin {
+        width: 29px;
+        height: 29px;
+        font-size: 14px;
+    }
+
+    .island-pin span {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .header-stamp {
+        display: none;
+    }
+
+    .hero {
+        min-height: 560px;
+    }
+
+    .hero-compass {
+        width: 65px;
+        height: 65px;
+        right: 4%;
+        top: 4%;
+        font-size: 10px;
+    }
+
+    .hero-compass span {
+        font-size: 25px;
+    }
+
+    .hero-bottom {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .map-section,
+    .island-list {
+        padding: 60px 4%;
+    }
+
+    .map-paper {
+        min-height: 390px;
+    }
+
+    .map-title {
+        letter-spacing: 1px;
+        font-size: 12px;
+    }
+
+    .map-subtitle {
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+
+    .compass-map {
+        width: 40px;
+        height: 58px;
+        font-size: 10px;
+    }
+
+    .compass-map div {
+        font-size: 25px;
+    }
+
+    .island-pin {
+        width: 24px;
+        height: 24px;
+        font-size: 11px;
+    }
+
+    .island-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .island-modal-card {
+        padding: 25px 18px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}

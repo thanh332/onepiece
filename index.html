@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Line – The World Atlas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=IM+Fell+English:ital@0;1&family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="topbar">
+    <a class="brand" href="#home">
+        <span class="brand-icon">☠</span>
+        <span>GRAND LINE <small>THE WORLD ATLAS</small></span>
+    </a>
+
+    <nav>
+        <a href="#home">Start</a>
+        <a href="#map-section">Weltkarte</a>
+        <a href="#island-list">Inselregister</a>
+    </nav>
+
+    <div class="header-stamp">EST. 1522</div>
+</header>
+
+<main>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">THE GREAT SEA · THE UNKNOWN WORLD</p>
+            <h1>THE WORLD<br><span>OF ONE PIECE</span></h1>
+            <div class="hero-divider">━━━━━━ ✦ ☠ ✦ ━━━━━━</div>
+            <p class="hero-description">
+                Eine Welt voller geheimnisvoller Inseln, verlorener Königreiche,
+                gewaltiger Meere und unerforschter Orte.
+            </p>
+            <a href="#map-section" class="hero-button">DIE KARTE ENTDECKEN ↓</a>
+        </div>
+
+        <div class="hero-compass">N<br><span>✥</span><br>S</div>
+        <div class="hero-bottom">
+            <span>4 OCEANS</span>
+            <span>1 GRAND LINE</span>
+            <span>COUNTLESS ISLANDS</span>
+        </div>
+    </section>
+
+    <section class="map-section" id="map-section">
+        <div class="section-heading">
+            <p class="eyebrow">CHART Nº 001 · WORLD GOVERNMENT ARCHIVE</p>
+            <h2>Die Weltkarte</h2>
+            <p>Wähle eine Insel auf der Karte, um ihre Akte zu öffnen.</p>
+        </div>
+
+        <div class="map-toolbar">
+            <div class="map-legend">
+                <span><i class="legend-dot grand"></i> Grand Line</span>
+                <span><i class="legend-dot blue"></i> Blues</span>
+                <span><i class="legend-dot red"></i> Red Line</span>
+            </div>
+            <div class="map-counter">ISLANDS FOUND: <strong id="island-count">0</strong></div>
+        </div>
+
+        <div class="map-frame">
+            <div class="map-paper">
+                <div class="map-grid"></div>
+                <div class="map-title">THE WORLD OF ONE PIECE</div>
+                <div class="map-subtitle">A MAP OF THE KNOWN SEAS</div>
+
+                <div class="compass-map">
+                    <span>N</span>
+                    <div>✥</div>
+                    <span>S</span>
+                </div>
+
+                <div class="sea-label east">EAST BLUE</div>
+                <div class="sea-label west">WEST BLUE</div>
+                <div class="sea-label north">NORTH BLUE</div>
+                <div class="sea-label south">SOUTH BLUE</div>
+
+                <div class="red-line vertical"></div>
+                <div class="red-line horizontal"></div>
+
+                <div class="calm-belt top"></div>
+                <div class="calm-belt bottom"></div>
+
+                <div class="grand-line">
+                    <div class="grand-line-label">GRAND LINE</div>
+                    <div class="new-world-label">NEW WORLD</div>
+                </div>
+
+                <div class="map-islands">
+
+                    <!-- EAST BLUE -->
+                    <button class="island-pin" style="--x:14%;--y:24%" data-island="dawn">🏝️<span>Dawn Island</span></button>
+                    <button class="island-pin" style="--x:24%;--y:36%" data-island="shells">⚓<span>Shells Town</span></button>
+                    <button class="island-pin" style="--x:12%;--y:48%" data-island="orange">🍊<span>Orange Town</span></button>
+                    <button class="island-pin" style="--x:24%;--y:57%" data-island="syrup">🌳<span>Syrup Village</span></button>
+                    <button class="island-pin" style="--x:13%;--y:75%" data-island="baratie">🍽️<span>Baratie</span></button>
+                    <button class="island-pin" style="--x:28%;--y:79%" data-island="logue">🏙️<span>Loguetown</span></button>
+
+                    <!-- WEST BLUE -->
+                    <button class="island-pin" style="--x:72%;--y:24%" data-island="ohara">📚<span>Ohara</span></button>
+                    <button class="island-pin" style="--x:84%;--y:42%" data-island="west">🏝️<span>West Blue</span></button>
+
+                    <!-- NORTH BLUE -->
+                    <button class="island-pin" style="--x:40%;--y:9%" data-island="flevance">❄️<span>Flevance</span></button>
+                    <button class="island-pin" style="--x:57%;--y:10%" data-island="minion">🌲<span>Minion Island</span></button>
+
+                    <!-- SOUTH BLUE -->
+                    <button class="island-pin" style="--x:40%;--y:89%" data-island="torino">🦜<span>Torino Kingdom</span></button>
+                    <button class="island-pin" style="--x:59%;--y:88%" data-island="baterilla">🌴<span>Baterilla</span></button>
+
+                    <!-- PARADISE -->
+                    <button class="island-pin grand-pin" style="--x:36%;--y:44%" data-island="reverse">🌋<span>Reverse Mountain</span></button>
+                    <button class="island-pin grand-pin" style="--x:43%;--y:35%" data-island="whiskey">🌵<span>Whiskey Peak</span></button>
+                    <button class="island-pin grand-pin" style="--x:49%;--y:47%" data-island="little">🦖<span>Little Garden</span></button>
+                    <button class="island-pin grand-pin" style="--x:55%;--y:34%" data-island="drum">❄️<span>Drum Island</span></button>
+                    <button class="island-pin grand-pin" style="--x:61%;--y:49%" data-island="alabasta">🏜️<span>Alabasta</span></button>
+                    <button class="island-pin grand-pin" style="--x:68%;--y:37%" data-island="jaya">🌴<span>Jaya</span></button>
+                    <button class="island-pin grand-pin" style="--x:75%;--y:49%" data-island="skypiea">☁️<span>Skypiea</span></button>
+                    <button class="island-pin grand-pin" style="--x:81%;--y:35%" data-island="water7">🚢<span>Water 7</span></button>
+                    <button class="island-pin grand-pin" style="--x:88%;--y:49%" data-island="enies">⚖️<span>Enies Lobby</span></button>
+
+                    <!-- NEW WORLD -->
+                    <button class="island-pin new-pin" style="--x:94%;--y:26%" data-island="sabaody">🌳<span>Sabaody Archipel</span></button>
+                    <button class="island-pin new-pin" style="--x:95%;--y:64%" data-island="fishman">🫧<span>Fischmenscheninsel</span></button>
+                    <button class="island-pin new-pin" style="--x:84%;--y:75%" data-island="punk">☣️<span>Punk Hazard</span></button>
+                    <button class="island-pin new-pin" style="--x:73%;--y:82%" data-island="dressrosa">🌹<span>Dressrosa</span></button>
+                    <button class="island-pin new-pin" style="--x:61%;--y:74%" data-island="zou">🐘<span>Zou</span></button>
+                    <button class="island-pin new-pin" style="--x:49%;--y:70%" data-island="wholecake">🍰<span>Totto Land</span></button>
+                    <button class="island-pin new-pin" style="--x:43%;--y:58%" data-island="wano">⛩️<span>Wano Kuni</span></button>
+                    <button class="island-pin new-pin" style="--x:51%;--y:20%" data-island="egghead">🤖<span>Egghead</span></button>
+
+                </div>
+
+                <div class="map-footer-left">GRAND LINE ATLAS · VOL. I</div>
+                <div class="map-footer-right">NOT ALL ROUTES ARE KNOWN</div>
+            </div>
+        </div>
+
+        <p class="map-hint">✦ Tipp: Klicke auf ein Insel-Symbol, um mehr zu erfahren.</p>
+    </section>
+
+    <section class="island-list" id="island-list">
+        <div class="section-heading">
+            <p class="eyebrow">THE ARCHIVE</p>
+            <h2>Das Inselregister</h2>
+            <p>Suche nach einer Insel oder entdecke die verschiedenen Regionen.</p>
+        </div>
+
+        <div class="search-box">
+            <span>⌕</span>
+            <input type="text" id="island-search" placeholder="Insel suchen ...">
+        </div>
+
+        <div class="filter-buttons">
+            <button class="filter active" data-filter="all">Alle</button>
+            <button class="filter" data-filter="East Blue">East Blue</button>
+            <button class="filter" data-filter="West Blue">West Blue</button>
+            <button class="filter" data-filter="North Blue">North Blue</button>
+            <button class="filter" data-filter="South Blue">South Blue</button>
+            <button class="filter" data-filter="Grand Line">Grand Line</button>
+            <button class="filter" data-filter="New World">New World</button>
+        </div>
+
+        <div class="island-cards" id="island-cards"></div>
+    </section>
+
+    <section class="quote-section">
+        <div class="quote-mark">“</div>
+        <p>THE SEA IS ENDLESS.<br>THE WORLD IS FULL OF MYSTERIES.</p>
+        <span>— THE GRAND LINE ATLAS —</span>
+    </section>
+
+</main>
+
+<footer>
+    <div>☠ GRAND LINE – THE WORLD ATLAS</div>
+    <p>Eine interaktive Entdeckungsreise durch die Welt von One Piece.</p>
+    <span>✦ THE WORLD IS YOURS TO EXPLORE ✦</span>
+</footer>
+
+<!-- INSEL-DETAILFENSTER -->
+<div class="island-modal" id="island-modal">
+    <div class="island-modal-card">
+        <button class="modal-close" id="modal-close">✕</button>
+        <div class="modal-file-label">CONFIDENTIAL ISLAND FILE</div>
+        <div class="modal-island-icon" id="modal-icon">🏝️</div>
+        <p class="modal-region" id="modal-region">GRAND LINE</p>
+        <h2 id="modal-name">Inselname</h2>
+        <div class="modal-divider">━━━━ ✦ ━━━━</div>
+        <p class="modal-description" id="modal-description"></p>
+
+        <div class="info-grid">
+            <div><span>REGION</span><strong id="info-region"></strong></div>
+            <div><span>KLIMA</span><strong id="info-climate"></strong></div>
+            <div><span>BEKANNT FÜR</span><strong id="info-famous"></strong></div>
+            <div><span>BESONDERHEIT</span><strong id="info-special"></strong></div>
+        </div>
+
+        <div class="modal-funfact">
+            <span>✦ WUSSTEST DU SCHON?</span>
+            <p id="modal-fact"></p>
+        </div>
+        <button class="modal-done" id="modal-done">AKTE SCHLIESSEN</button>
+    </div>
+</div>
+
+<div class="treasure-toast" id="treasure-toast">✦ Geheime Entdeckung! ✦</div>
+
+<script src="script.js"></script>
+</body>
+</html>
